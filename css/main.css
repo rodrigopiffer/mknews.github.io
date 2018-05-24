@@ -1,0 +1,209 @@
+html, body {
+    height: 100%;
+}
+html {
+    font-family: "helvetica neue", sans-serif;
+}
+
+body{
+	width: 70%;
+	margin: auto;
+}
+
+.clearfix::after{
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.nav {
+
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+}
+.menu {
+    margin: 0 30px 0 0;
+}
+.menu a {
+    clear: right;
+    text-decoration: none;
+    color: gray;
+    margin: 0 10px;
+    line-height: 70px;
+}
+
+.logo{
+	float: left;
+	margin-left: 10px;
+	color: gray;
+}
+
+span {
+    color: #54D17A;
+}
+
+label {
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: right;
+}
+#toggle {
+    display: none;
+}
+
+/*------ Post Esquerda ------*/
+
+.post{
+	width: 100%;
+	position: relative;
+	margin-bottom: 10em;
+	margin-top: 5em;
+}
+
+.post > .postText{
+	position: absolute;
+	top: 85px;
+}
+
+.post > .postText > .underline{
+	display: block;
+	background-color: #FC5C65;
+	height: 3px;
+	width: 61px;
+	margin-top: 5px;
+}
+
+.post > .postImg{
+	float: right;
+	width: 85%;
+	-webkit-box-shadow: 0px 3px 70px 0px rgba(23,30,36,0.06);
+	-moz-box-shadow: 0px 3px 70px 0px rgba(23,30,36,0.06);
+	box-shadow: 0px 3px 70px 0px rgba(23,30,36,0.06);
+}
+
+.post > .postImgPost{
+	float: left;
+	width: 100%;
+	-webkit-box-shadow: 0px 3px 70px 0px rgba(23,30,36,0.06);
+	-moz-box-shadow: 0px 3px 70px 0px rgba(23,30,36,0.06);
+	box-shadow: 0px 3px 70px 0px rgba(23,30,36,0.06);
+}
+
+.post ul{
+	position: absolute;
+	bottom: 0;
+	right: 86%;
+}
+
+.post ul li{
+	margin-top: 20px;
+
+}
+
+.post a, .post2 a{
+	text-decoration: none;
+	color: #17191A;
+}
+
+/*------ POST DIREITA ------*/
+
+.post2{
+	width: 100%;
+	position: relative;
+	margin-bottom: 10em;
+}
+
+.post2 > .postText{
+	position: absolute;
+	top: 85px;
+	right: 0;
+	text-align: right;
+}
+
+.post2 > .postText > .underline{
+	display: block;
+	background-color: #FC5C65;
+	height: 3px;
+	width: 61px;
+	margin-top: 5px;
+	float: right;
+}
+
+.post2 > .postImg{
+	float: left;
+	width: 85%;
+	-webkit-box-shadow: 0px 3px 70px 0px rgba(23,30,36,0.06);
+	-moz-box-shadow: 0px 3px 70px 0px rgba(23,30,36,0.06);
+	box-shadow: 0px 3px 70px 0px rgba(23,30,36,0.06);
+}
+
+.post2 > .postImgPost{
+	float: left;
+	width: 100%;
+	-webkit-box-shadow: 0px 3px 70px 0px rgba(23,30,36,0.06);
+	-moz-box-shadow: 0px 3px 70px 0px rgba(23,30,36,0.06);
+	box-shadow: 0px 3px 70px 0px rgba(23,30,36,0.06);
+}
+
+.post2 ul{
+	position: absolute;
+	bottom: 0;
+	left: 86%;
+}
+
+.post2 ul li{
+	margin-top: 20px;
+
+}
+
+
+/*------ POST 01 ------*/
+
+.post01{
+	border: 1px solid #EAEAEB;
+	-webkit-box-shadow: 0px 3px 70px 0px rgba(23,30,36,0.06);
+	-moz-box-shadow: 0px 3px 70px 0px rgba(23,30,36,0.06);
+	box-shadow: 0px 3px 70px 0px rgba(23,30,36,0.06);
+	padding: 50px;
+	text-decoration: none;
+	margin-top: -8em;
+}
+
+
+
+.post02{
+	text-align: center;
+}
+
+
+
+@media only screen and (max-width: 750px) {
+	body{
+	width: 95%;
+	margin: auto;
+	}
+    label {
+        display: block;
+        cursor: pointer;
+    }
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+    .menu a {
+        display: block;
+        border: 1px solid #EAEAEB;
+        margin: 0;
+     
+    }
+    #toggle:checked + .menu {
+        display: block;
+    }
+    
+    
+}
